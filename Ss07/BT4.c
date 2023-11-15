@@ -6,7 +6,7 @@ int main(){
 	scanf("%d",&n);
 	do{
 		printf("INTEGER NUMBER\n");
-		printf("1. In ra day so co gia tri nho hon hoac bang n và tinh tong\n");
+		printf("1. In ra day so co gia tri nho hon hoac bang n vÃ  tinh tong\n");
 		printf("2. In ra va dem cac so chia het cho 3 nho hon n\n");
 		printf("3. Kiem tra n co phai so nguyen to khong\n");
 		printf("4. Kiem tra n co phai so hoan hao khong\n");
@@ -70,25 +70,24 @@ int main(){
 				break;
 			case 7:
 				res = 0;
-                while(n > 0){
-                    tmp = n % 10;
-                    res = res * 10 + tmp;
-                    n = n / 10;
-                }
-                printf("So dao nguoc cua n la: %d\n",res);
-                break;
-            case 8:
-               	do{
-               		for(int j=1;j<=i;j++){
-					    if(i%j==0){
-						    p++;
-					    }
-					    if(p<=2){
+                                while(n > 0){
+                                     tmp = n % 10;
+                                     res = res * 10 + tmp;
+                                     n = n / 10;
+                                     }
+                                     printf("So dao nguoc cua n la: %d\n",res);
+                                     break;
+                        case 8:
+               	                for(int i=1;i<=n;i++){
+               		             for(int j=1;j<=i/2;j++){
+			                   if(i%j==0){
+				                p++;
+				           }
+					   if(p<=2){
 					        printf("%d\n",i);
-					    }
-			        }
-			        i++;
-			    }while(i<n);
+					   }
+			              }
+		                }
 				break;
 			case 9:
 				exit(0);
